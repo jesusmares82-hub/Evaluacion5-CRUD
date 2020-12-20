@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Agencia de Coches</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <div class="container border shadow-sm p-3 mb-5 bg-white rounded">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://www.flaticon.es/svg/static/icons/svg/741/741407.svg"
+            alt=""
+            width="30"
+            height="24"
+          />
+          Agencia Autos Pichaco-Ajusco
+        </a>
+      </div>
+    </nav>
+    <div class="container mt-5 border shadow-sm p-3 mb-5 bg-white rounded">
+      <h3 class="mb-5">CRUD de coches para agencia</h3>
+      <p id="counter" class="mt-5 text-center"></p>
+      <h3 class="mt-5">Agregar</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card bg-blue mb-5 shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <form
+                action="javascript:void(0);"
+                method="POST"
+                onsubmit="app.Add()"
+              >
+                <div class="form-group">
+                  <label for="add-brand">Brand:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="add-brand"
+                    placeholder="New brand"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="add-model">Model:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="add-model"
+                    placeholder="New model"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="add-color">Color:</label>
+                  <input
+                    class="form-control-color"
+                    type="color"
+                    id="add-color"
+                    value="#563d7c"
+                    title="Choose your color"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="add-year">Year:</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="add-year"
+                    placeholder="New year"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="add-price">Price:</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="add-price"
+                      placeholder="New price"
+                      required
+                    />
+                  </div>
+                </div>
+                <input class="mt-2 btn-primary" type="submit" value="Add" />
+              </form>
+
+              <div id="spoiler" role="aria-hidden">
+                <form action="javascript:void(0);" method="POST" id="saveEdit">
+                  <input type="text" id="edit-brand" />
+                  <input type="text" id="edit-model" />
+                  <input type="color" id="edit-color" />
+                  <input type="number" id="edit-year" />
+                  <input type="text" id="edit-price" />
+                  <input class="btn-warning" type="submit" value="Edit" />
+                  <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 table-responsive">
+          <table class="table">
+            <tr>
+              <th></th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Color</th>
+              <th>Año</th>
+              <th>Precio</th>
+              <th>Opciones</th>
+            </tr>
+            <tbody id="cars"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/js.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="#">All rights reserved</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
