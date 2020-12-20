@@ -10,3 +10,11 @@ button,
 body {
   font-family: Arial;
 }
+.punteado {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: 660033;
+  background-color: cc3366;
+  font-family: verdana, arial;
+  font-size: 12pt;
+}

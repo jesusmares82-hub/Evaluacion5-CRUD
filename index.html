@@ -13,21 +13,74 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light">
-      <div class="container border shadow-sm p-3 mb-5 bg-white rounded">
+    <nav
+      class="navbar navbar-light navbar-expand-lg container punteado shadow-sm p-3 mb-5 bg-white rounde"
+    >
+      <div class="container">
         <a class="navbar-brand" href="#">
-          <img
-            src="https://www.flaticon.es/svg/static/icons/svg/741/741407.svg"
-            alt=""
-            width="30"
-            height="24"
-          />
-          Agencia Autos Pichaco-Ajusco
+          <img src="./IMG/Picacho Ajusco.png" alt="" width="140" height="134" />
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Promotions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Uber Driver</a></li>
+                <li><a class="dropdown-item" href="#">Auto Financiering</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"> Bank financing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">Car Dealers</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
     <div class="container mt-5 border shadow-sm p-3 mb-5 bg-white rounded">
-      <h3 class="mb-5">CRUD de coches para agencia</h3>
+      <h3 class="mb-5">
+        CRUD <small class="text-secondary">de coches para agencia</small>
+      </h3>
       <p id="counter" class="mt-5 text-center"></p>
       <h3 class="mt-5">Agregar</h3>
       <div class="row">
@@ -109,21 +162,25 @@
             </div>
           </div>
         </div>
+        
         <div class="col-sm-9 table-responsive">
-          <table class="table">
-            <tr>
-              <th></th>
-              <th>Marca</th>
-              <th>Modelo</th>
-              <th>Color</th>
-              <th>Año</th>
-              <th>Precio</th>
-              <th>Opciones</th>
-            </tr>
-            <tbody id="cars"></tbody>
-          </table>
-        </div>
-      </div>
+          
+            <table class="table">
+              <tr>
+                <th></th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Color</th>
+                <th>Año</th>
+                <th>Precio</th>
+                <th>Opciones</th>
+              </tr>
+              <tbody id="cars"></tbody>
+            </table>
+         
+       
+      </div> 
+     
     </div>
     <script src="./JS/js.js"></script>
     <script
