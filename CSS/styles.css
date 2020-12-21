@@ -20,8 +20,15 @@ body {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12pt;
 }
-.text-mine {
+.custom-text {
   color: rgb(246, 73, 167);
+  text-shadow: rgba(246, 73, 167, 0.4) 0px 2px 3px;
+}
+.nav-text {
+  color: #a3cacd;
+}
+.font-size-icon {
+  font-size: 10pt;
 }
 
 /* Set the border color */
