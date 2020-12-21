@@ -57,9 +57,9 @@ var app = new (function () {
       if (data > 1) {
         name = "cars";
       }
-      el.innerHTML = data + " " + name;
+      el.innerHTML = "Inventory:  " + data + " " + name;
     } else {
-      el.innerHTML = "No " + name;
+      el.innerHTML = "Inventory: " + "No " + name + "s";
     }
   };
 
@@ -70,7 +70,7 @@ var app = new (function () {
       for (i = 0; i < this.cars.length; i++) {
         data += "<tr>";
         data +=
-          '<td> <img src="./IMG/car.jpeg" height="40" width="60"></img></td>';
+          '<td> <img class="rounded" src="./IMG/car.jpeg" height="40" width="60"></img></td>';
         data += "<td>" + this.cars[i].carBrand + "</td>";
         data += "<td>" + this.cars[i].model + "</td>";
         data +=

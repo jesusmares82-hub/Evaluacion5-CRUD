@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap");
 input[type="submit"],
 button,
 [aria-label] {
@@ -6,15 +7,30 @@ button,
 #spoiler {
   display: none;
 }
-
 body {
-  font-family: Arial;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(35, 40, 64);
 }
 .punteado {
   border-style: dashed;
   border-width: 1px;
-  border-color: 660033;
-  background-color: cc3366;
-  font-family: verdana, arial;
+  border-color: white;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 12pt;
+}
+.text-mine {
+  color: rgb(246, 73, 167);
+}
+
+/* Set the border color */
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(250, 163, 215);
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(246, 73, 167, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

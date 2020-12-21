@@ -14,14 +14,20 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-light navbar-expand-lg container punteado shadow-sm p-3 mb-5 bg-white rounde"
+      class="navbar navbar-light navbar-expand-lg container punteado shadow-sm p-3 mb-5 rounde"
     >
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./IMG/Picacho Ajusco.png" alt="" width="140" height="134" />
+          <img
+            class="rounded"
+            src="./IMG/Picacho Ajusco.png"
+            alt=""
+            width="140"
+            height="134"
+          />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler custom-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -29,19 +35,21 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navbar-light"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Financing</a>
+              <a class="nav-link text-white" href="#">Financing</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-white"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -60,7 +68,9 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1">Car Dealers</a>
+              <a class="nav-link text-white" href="#" tabindex="-1"
+                >Car Dealers</a
+              >
             </li>
           </ul>
           <form class="d-flex">
@@ -70,7 +80,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success text-white" type="submit">
               Search
             </button>
           </form>
@@ -79,10 +89,10 @@
     </nav>
     <div class="container mt-5 border shadow-sm p-3 mb-5 bg-white rounded">
       <h3 class="mb-5">
-        CRUD <small class="text-secondary">de coches para agencia</small>
+        CRUD <small class="text-mine"> car for agency</small>
       </h3>
       <p id="counter" class="mt-5 text-center"></p>
-      <h3 class="mt-5">Agregar</h3>
+      <h3 class="mt-5">Add new car</h3>
       <div class="row">
         <div class="col-sm-3">
           <div class="card bg-blue mb-5 shadow-sm p-3 mb-5 bg-white rounded">
@@ -167,12 +177,12 @@
           <table class="table">
             <tr>
               <th></th>
-              <th>Marca</th>
-              <th>Modelo</th>
+              <th>Brand</th>
+              <th>Model</th>
               <th>Color</th>
-              <th>Año</th>
-              <th>Precio</th>
-              <th>Opciones</th>
+              <th>Year</th>
+              <th>Price</th>
+              <th>Options</th>
             </tr>
             <tbody id="cars"></tbody>
           </table>
@@ -187,11 +197,8 @@
     ></script>
   </body>
   <footer class="bg-light text-center text-lg-start mt-5">
-    <!-- Copyright -->
     <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2020 Copyright:
-      <a class="text-dark" href="#">All rights reserved</a>
+      <p class="mt-2">© 2020 Copyright: All rights reserved</p>
     </div>
-    <!-- Copyright -->
   </footer>
 </html>
