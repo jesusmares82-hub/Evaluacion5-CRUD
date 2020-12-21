@@ -74,7 +74,9 @@ var app = new (function () {
         data += "<td>" + this.cars[i].carBrand + "</td>";
         data += "<td>" + this.cars[i].model + "</td>";
         data +=
-          '<td style="background-color: ' + this.cars[i].color + '"></td>';
+          '<td ><div class="circulo " style="background-color: ' +
+          this.cars[i].color +
+          '" ></div></td>';
         data += "<td>" + this.cars[i].age + "</td>";
         data +=
           '<td style="currency"> $' +
