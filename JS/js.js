@@ -86,9 +86,9 @@ var app = new (function () {
           }) +
           "</td>";
         data +=
-          '<td><button class="btn btn-danger me-md-2" onclick="app.Edit(' +
+          '<td><a href="#spoiler" ><button class="btn btn-danger me-md-2" onclick="app.Edit(' +
           i +
-          ')"><i class="far fa-edit font-size-icon"></i></button><button class="btn btn-success  me-md-2" onclick="app.Delete(' +
+          ')"><i class="far fa-edit font-size-icon"></i></button></a><button class="btn btn-success  me-md-2" onclick="app.Delete(' +
           i +
           ')"><i class="far fa-trash-alt font-size-icon"></i></button></td>';
 
