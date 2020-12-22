@@ -101,6 +101,7 @@ var app = new (function () {
   };
 
   this.Add = function () {
+    // Get the value
     var pic = "./IMG/car.jpeg";
     var carBrand = document.getElementById("add-brand").value;
     var model = document.getElementById("add-model").value;
@@ -108,11 +109,9 @@ var app = new (function () {
     var age = document.getElementById("add-year").value;
     var price = document.getElementById("add-price").value;
     var id = cars.length + 1;
-    // Get the value
-    //var country = el.value;
 
     // Add the new value
-    //this.cars.push(country.trim());
+
     if (carBrand) {
       const newCar = {
         pic,
@@ -133,8 +132,6 @@ var app = new (function () {
       document.getElementById("add-price").value = "";
       // Display the new list
       this.FetchAll();
-      // Hide fields
-      //CloseInput();
     }
   };
 
